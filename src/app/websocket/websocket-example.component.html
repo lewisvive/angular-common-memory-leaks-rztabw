@@ -1,0 +1,8 @@
+<h1>Websocket Example - Crypto Prices</h1>
+
+<div class="alert alert-warning">
+  If you remove this.webSocket.close() on CoinPriceComponent, you will see the memory leak as console.log still running when you navigate away from this component. 
+</div>
+<div *ngFor="let asset of assets">
+	<coin-price [id]="asset"></coin-price>
+</div>
